@@ -6,6 +6,7 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const User = require('./Schema')
 const bodyparser = require('body-parser');
+const path = require('path')
 
 app.use(cors())
 app.use(bodyparser.urlencoded({extended:true}))

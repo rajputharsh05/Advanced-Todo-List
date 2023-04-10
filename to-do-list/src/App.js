@@ -89,6 +89,7 @@ const  App = () => {
   }
 
   const AddItem = async (item)=>{
+    console.log("hahahah")
     const idx = Math.floor(Date.now() / 1000);
     const obj = {work:item,id:idx};
     await fetch('/api/to-do/',{

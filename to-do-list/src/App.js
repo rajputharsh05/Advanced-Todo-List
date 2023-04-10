@@ -20,7 +20,7 @@ const  App = () => {
   const [Items,SetItems] = useState([])
   
   async function fetchdata(){
-    const data = await fetch("http://localhost:3001/api/to-do/",{
+    const data = await fetch("/api/to-do/",{
       method:"GET",
     })
     const value = await data.json();
